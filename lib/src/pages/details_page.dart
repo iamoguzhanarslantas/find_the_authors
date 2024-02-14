@@ -10,6 +10,11 @@ class DetailsPage extends StatelessWidget {
   static const String routeName = '/details';
   const DetailsPage({super.key});
 
+  Text appBarTitle(BuildContext context) {
+    final args = ModalRoute.of(context)!.settings.arguments as String;
+    return Text('$args\'s Works');
+  }
+
   ListView authorWorksListViewBuilder(AuthorWorksResponse authorWorksList) {
     return ListView.builder(
       itemCount: authorWorksList.authorWorks!.length,
@@ -26,7 +31,7 @@ class DetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Author Works'),
+        title: appBarTitle(context),
       ),
       body: BlocBuilder<AuthorWorksCubit, AuthorWorksState>(
         builder: (context, state) {
