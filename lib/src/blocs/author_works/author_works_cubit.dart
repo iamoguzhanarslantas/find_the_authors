@@ -12,7 +12,7 @@ class AuthorWorksCubit extends Cubit<AuthorWorksState> {
 
   final IAuthorRepository repository;
 
-  Future<void> getAuthorWorksList(String authorKey) async {
+  Future<void> getAuthorWorksList({required String authorKey}) async {
     emit(AuthorWorksLoading());
     try {
       final authorWorksList = await repository.getAuthorWorks(authorKey);

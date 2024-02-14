@@ -13,7 +13,7 @@ class AuthorsCubit extends Cubit<AuthorsState> {
 
   bool isUserSearch = true;
 
-  Future<void> getAuthorsList(String query) async {
+  Future<void> getAuthorsList({required String query}) async {
     emit(AuthorsLoading());
     try {
       final authorsList = await repository.getAuthors(query);

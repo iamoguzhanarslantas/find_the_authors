@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:find_the_authors/src/blocs/blocs.dart'
     show AuthorWorksCubit, AuthorsCubit;
 import 'package:find_the_authors/src/constants/constants.dart'
-    show APIEndPoints;
+    show BaseURLExtension;
 import 'package:find_the_authors/src/pages/pages.dart'
     show DetailsPage, SearchPage;
 import 'package:find_the_authors/src/repositories/repositories.dart'
@@ -22,9 +22,7 @@ class App extends StatelessWidget {
           lazy: true,
           create: (context) => AuthorsCubit(
             repository: AuthorRepository(
-              Dio(
-                BaseOptions(baseUrl: APIEndPoints.kBaseUrl),
-              ),
+              Dio().toBaseURL,
             ),
           ),
         ),
@@ -32,9 +30,7 @@ class App extends StatelessWidget {
           lazy: true,
           create: (context) => AuthorWorksCubit(
             repository: AuthorRepository(
-              Dio(
-                BaseOptions(baseUrl: APIEndPoints.kBaseUrl),
-              ),
+              Dio().toBaseURL,
             ),
           ),
         ),
