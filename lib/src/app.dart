@@ -1,10 +1,15 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:find_the_authors/src/blocs/blocs.dart'
     show AuthorWorksCubit, AuthorsCubit;
+import 'package:find_the_authors/src/constants/constants.dart'
+    show APIEndPoints;
 import 'package:find_the_authors/src/pages/pages.dart'
     show DetailsPage, SearchPage;
+import 'package:find_the_authors/src/repositories/repositories.dart'
+    show AuthorRepository;
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -15,11 +20,23 @@ class App extends StatelessWidget {
       providers: [
         BlocProvider<AuthorsCubit>(
           lazy: true,
-          create: (context) => AuthorsCubit(),
+          create: (context) => AuthorsCubit(
+            repository: AuthorRepository(
+              Dio(
+                BaseOptions(baseUrl: APIEndPoints.kBaseUrl),
+              ),
+            ),
+          ),
         ),
         BlocProvider(
           lazy: true,
-          create: (context) => AuthorWorksCubit(),
+          create: (context) => AuthorWorksCubit(
+            repository: AuthorRepository(
+              Dio(
+                BaseOptions(baseUrl: APIEndPoints.kBaseUrl),
+              ),
+            ),
+          ),
         ),
       ],
       child: MaterialApp(
