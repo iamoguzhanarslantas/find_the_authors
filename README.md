@@ -36,10 +36,10 @@ flutter pub get
 
 ## Screenshots
 
-![Screenshot_2024-02-15-00-06-57-67](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_1.png)
-![Screenshot_2024-02-15-00-07-21-53](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_2.png)
-![Screenshot_2024-02-15-00-07-32-82](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_3.png)
-![Screenshot_2024-02-15-00-07-40-58](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_4.png)
+![Screenshot_2024-02-15-00-06-57-67](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_1.jpg)
+![Screenshot_2024-02-15-00-07-21-53](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_2.jpg)
+![Screenshot_2024-02-15-00-07-32-82](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_3.jpg)
+![Screenshot_2024-02-15-00-07-40-58](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_4.jpg)
 
 
 ## IDE Version
