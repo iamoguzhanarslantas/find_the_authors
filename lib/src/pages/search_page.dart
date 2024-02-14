@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:find_the_authors/src/blocs/blocs.dart';
-import 'package:find_the_authors/src/views/views.dart' show DetailsPage;
+import 'package:find_the_authors/src/pages/pages.dart' show DetailsPage;
 import 'package:find_the_authors/src/widgets/widgets.dart'
     show CustomListTile, CustomTextField;
 
@@ -15,12 +15,16 @@ class SearchPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Authors'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {},
-          ),
-        ],
+        actions: context.watch<AuthorsCubit>().isUserSearch
+            ? []
+            : [
+                IconButton(
+                  icon: const Icon(Icons.search),
+                  onPressed: () {
+                    context.read<AuthorsCubit>().returnToSearch();
+                  },
+                ),
+              ],
       ),
       body: BlocBuilder<AuthorsCubit, AuthorsState>(
         builder: (context, state) {
@@ -29,7 +33,11 @@ class SearchPage extends StatelessWidget {
               labeltext: 'Search',
               prefix: const Icon(Icons.search),
               onSubmitted: (value) {
-                context.read<AuthorsCubit>().getAuthorsList(value);
+                if (value.isNotEmpty) {
+                  context.read<AuthorsCubit>().getAuthorsList(value);
+                } else {
+                  return;
+                }
               },
             );
           } else if (state is AuthorsLoading) {
@@ -68,8 +76,8 @@ class SearchPage extends StatelessWidget {
               },
             );
           } else if (state is AuthorsError) {
-            return const Center(
-              child: Text('Search Error'),
+            return Center(
+              child: Text(state.errorMessage!),
             );
           }
           return const Center(

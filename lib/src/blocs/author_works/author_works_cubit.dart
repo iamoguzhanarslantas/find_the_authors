@@ -1,6 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:find_the_authors/src/models/models.dart';
+import 'package:find_the_authors/src/models/models.dart'
+    show AuthorWorksResponse;
 import 'package:find_the_authors/src/repositories/repositories.dart'
     show AuthorRepository;
 
@@ -15,7 +16,7 @@ class AuthorWorksCubit extends Cubit<AuthorWorksState> {
       final authorWorksList =
           await AuthorRepository().getAuthorWorks(authorKey);
       if (authorWorksList == null) {
-        emit(const AuthorWorksError('Failed to load data'));
+        emit(const AuthorWorksError('No Author Works Found!'));
         return;
       }
       emit(AuthorWorksLoaded(authorWorksList));

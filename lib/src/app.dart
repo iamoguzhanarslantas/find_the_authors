@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:find_the_authors/src/blocs/blocs.dart'
     show AuthorWorksCubit, AuthorsCubit;
-import 'package:find_the_authors/src/views/views.dart'
+import 'package:find_the_authors/src/pages/pages.dart'
     show DetailsPage, SearchPage;
 
 class App extends StatelessWidget {

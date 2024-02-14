@@ -32,8 +32,8 @@ class DetailsPage extends StatelessWidget {
               },
             );
           } else if (state is AuthorWorksError) {
-            return const Center(
-              child: Text('Details Error'),
+            return Center(
+              child: Text(state.errorMessage!),
             );
           }
           return const Center(

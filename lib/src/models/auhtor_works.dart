@@ -3,13 +3,13 @@ class AuthorWorksResponse {
     this.authorWorks,
   });
 
-  List<AuthorWorks>? authorWorks;
+  List<AuthorWork>? authorWorks;
 
   factory AuthorWorksResponse.fromJson(Map<String, dynamic> json) =>
       AuthorWorksResponse(
         authorWorks: (json['entries'] as List<dynamic>)
             .map(
-              (e) => AuthorWorks.fromJson(e as Map<String, dynamic>),
+              (e) => AuthorWork.fromJson(e as Map<String, dynamic>),
             )
             .toList(),
       );
@@ -20,14 +20,14 @@ class AuthorWorksResponse {
       };
 }
 
-class AuthorWorks {
-  AuthorWorks({
+class AuthorWork {
+  AuthorWork({
     this.title,
   });
 
   String? title;
 
-  factory AuthorWorks.fromJson(Map<String, dynamic> json) => AuthorWorks(
+  factory AuthorWork.fromJson(Map<String, dynamic> json) => AuthorWork(
         title: json['title'] ?? 'No Title Info',
       );
 

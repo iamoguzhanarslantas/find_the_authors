@@ -1,11 +1,12 @@
-class AuthorResponse {
-  AuthorResponse({
+class AuthorsResponse {
+  AuthorsResponse({
     this.authors,
   });
 
   List<Author>? authors;
 
-  factory AuthorResponse.fromJson(Map<String, dynamic> json) => AuthorResponse(
+  factory AuthorsResponse.fromJson(Map<String, dynamic> json) =>
+      AuthorsResponse(
         authors: (json['docs'] as List<dynamic>)
             .map(
               (e) => Author.fromJson(e as Map<String, dynamic>),
@@ -13,7 +14,7 @@ class AuthorResponse {
             .toList(),
       );
 
-  Map<String, dynamic> toJson(AuthorResponse instance) => <String, dynamic>{
+  Map<String, dynamic> toJson(AuthorsResponse instance) => <String, dynamic>{
         'docs': instance.authors,
       };
 }

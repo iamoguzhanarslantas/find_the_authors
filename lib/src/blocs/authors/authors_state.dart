@@ -4,12 +4,13 @@ abstract class AuthorsState {
   const AuthorsState();
 }
 
-class AuthorsInitial extends AuthorsState {}
+class AuthorsInitial extends AuthorsState {
+}
 
 class AuthorsLoading extends AuthorsState {}
 
 class AuthorsLoaded extends AuthorsState {
-  final AuthorResponse? authorsList;
+  final AuthorsResponse? authorsList;
   const AuthorsLoaded(this.authorsList);
 }
 
