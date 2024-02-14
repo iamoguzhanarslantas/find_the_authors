@@ -14,13 +14,13 @@ git clone (https://github.com/iamoguzhanarslantas/find_the_authors.git)
 Go to the project directory and get third part packages
 
 ```bash
-  flutter pub get
+flutter pub get
 ```
 
 
 ## Tech Stack
 
-**Dependencies:** Flutter, Dio, Flutter_Bloc
+**Dependencies:** Flutter/Dart, Dio, Flutter_Bloc
 
 
 
@@ -36,9 +36,10 @@ Go to the project directory and get third part packages
 
 ## Screenshots
 
-![Emulator Screenshot - Pixel 2 - 2023-07-20 at 11 47 57](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_1.png)
-![Emulator Screenshot - Pixel 2 - 2023-07-20 at 11 52 18](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_2.png)
-![Emulator Screenshot - Pixel 2 - 2023-07-20 at 11 52 34](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_3.png)
+![Screenshot_2024-02-15-00-06-57-67](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_1.png)
+![Screenshot_2024-02-15-00-07-21-53](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_2.png)
+![Screenshot_2024-02-15-00-07-32-82](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_3.png)
+![Screenshot_2024-02-15-00-07-40-58](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_4.png)
 
 
 ## IDE Version
