@@ -1,16 +1,48 @@
-# find_the_authors
+# Find The Author App
 
-A new Flutter project.
+Discover the creators behind your favorite books with "Find the Authors." Input the Author's Name, and let the app to find the Author's Works for you. Download "Find the Authors" now and explore the essence of your literary journey.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Run Locally
 
-A few resources to get you started if this is your first Flutter project:
+Clone the project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+git clone (https://github.com/iamoguzhanarslantas/find_the_authors.git)
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Go to the project directory and get third part packages
+
+```bash
+  flutter pub get
+```
+
+
+## Tech Stack
+
+**Dependencies:** Flutter, Dio, Flutter_Bloc
+
+
+
+
+## Technical Features
+
+- MVVM
+
+- Bloc / Cubit
+
+- Layer-First (Project Structure)
+
+
+## Screenshots
+
+![Emulator Screenshot - Pixel 2 - 2023-07-20 at 11 47 57](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_1.png)
+![Emulator Screenshot - Pixel 2 - 2023-07-20 at 11 52 18](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_2.png)
+![Emulator Screenshot - Pixel 2 - 2023-07-20 at 11 52 34](https://github.com/iamoguzhanarslantas/find_the_authors/blob/master/assets/Screenshot_3.png)
+
+
+## IDE Version
+
+- Flutter version 3.16.9 on channel stable
+- Dart version 3.2.6
+- DevTools 2.28.5
