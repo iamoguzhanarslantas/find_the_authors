@@ -68,14 +68,12 @@ class SearchPage extends StatelessWidget {
             onTap: () {
               context
                   .read<AuthorWorksCubit>()
-                  .getAuthorWorksList(authorKey: author.authorKey!)
-                  .then((value) => {
-                        Navigator.pushNamed(
-                          context,
-                          DetailsPage.routeName,
-                          arguments: author.name,
-                        )
-                      });
+                  .getAuthorWorksList(authorKey: author.authorKey!);
+              Navigator.pushNamed(
+                context,
+                DetailsPage.routeName,
+                arguments: author.name,
+              );
             },
             title: Text(
               'Author: ${author.name!}',
