@@ -17,7 +17,7 @@ final class AuthorsLoaded extends AuthorsState {
   const AuthorsLoaded(this.authorsList);
 
   @override
-  List<Object> get props => [authorsList!];
+  List<Object> get props => [authorsList ?? ''];
 }
 
 final class AuthorsError extends AuthorsState {
@@ -25,5 +25,5 @@ final class AuthorsError extends AuthorsState {
   const AuthorsError(this.errorMessage);
 
   @override
-  List<Object> get props => [errorMessage!];
+  List<Object> get props => [errorMessage ?? ''];
 }
