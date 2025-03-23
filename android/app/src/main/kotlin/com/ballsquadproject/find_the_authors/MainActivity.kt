@@ -1,4 +1,4 @@
-package com.ballsquadproject.find_the_authors
+package com.ogzhnarslnts.find_the_authors
 
 import io.flutter.embedding.android.FlutterActivity
 

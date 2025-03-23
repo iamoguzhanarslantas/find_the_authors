@@ -89,11 +89,11 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.ballsquadproject" "\0"
+            VALUE "CompanyName", "com.ogzhnarslnts" "\0"
             VALUE "FileDescription", "find_the_authors" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "find_the_authors" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.ballsquadproject. All rights reserved." "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.ogzhnarslnts. All rights reserved." "\0"
             VALUE "OriginalFilename", "find_the_authors.exe" "\0"
             VALUE "ProductName", "find_the_authors" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"

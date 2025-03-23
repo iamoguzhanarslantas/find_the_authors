@@ -8,7 +8,7 @@
 PRODUCT_NAME = find_the_authors
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.ballsquadproject.findTheAuthors
+PRODUCT_BUNDLE_IDENTIFIER = com.ogzhnarslnts.findTheAuthors
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 com.ballsquadproject. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 com.ogzhnarslnts. All rights reserved.

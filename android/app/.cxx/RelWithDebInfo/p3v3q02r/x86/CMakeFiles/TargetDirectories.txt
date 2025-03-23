@@ -1,0 +1,2 @@
+/Users/iamoguzhanarslantas/Documents/GitHub/find_the_authors/android/app/.cxx/RelWithDebInfo/p3v3q02r/x86/CMakeFiles/edit_cache.dir
+/Users/iamoguzhanarslantas/Documents/GitHub/find_the_authors/android/app/.cxx/RelWithDebInfo/p3v3q02r/x86/CMakeFiles/rebuild_cache.dir

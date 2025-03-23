@@ -7,7 +7,7 @@ project(runner LANGUAGES CXX)
 set(BINARY_NAME "find_the_authors")
 # The unique GTK application identifier for this application. See:
 # https://wiki.gnome.org/HowDoI/ChooseApplicationID
-set(APPLICATION_ID "com.ballsquadproject.find_the_authors")
+set(APPLICATION_ID "com.ogzhnarslnts.find_the_authors")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.
