@@ -22,6 +22,10 @@ class CustomListTile extends StatelessWidget {
         title: title,
         subtitle: subtitle,
         trailing: trailing,
+        leadingAndTrailingTextStyle: const TextStyle(
+          fontSize: 12,
+          color: Colors.black,
+        ),
       ),
     );
   }
