@@ -1,0 +1,2 @@
+/Users/iamoguzhanarslantas/Documents/GitHub/find_the_authors/android/app/.cxx/RelWithDebInfo/1e713eq6/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/iamoguzhanarslantas/Documents/GitHub/find_the_authors/android/app/.cxx/RelWithDebInfo/1e713eq6/armeabi-v7a/CMakeFiles/rebuild_cache.dir
