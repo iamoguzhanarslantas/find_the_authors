@@ -1,3 +1,4 @@
+import 'package:find_the_authors/src/components/error_alert_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -24,9 +25,7 @@ class DetailsPage extends StatelessWidget {
             return DetailsPageAuthorWorkResults(
                 authorWorksList: authorWorksList);
           } else if (state is AuthorWorksError) {
-            return Center(
-              child: Text(state.errorMessage!),
-            );
+            return ErrorAlertDialog(errorMessage: state.errorMessage!);
           }
           return const Center(
             child: Text('Error'),
