@@ -21,7 +21,7 @@ class SearchPageAppBar extends StatelessWidget implements PreferredSizeWidget {
               IconButton(
                 icon: const Icon(
                   Icons.search,
-                  size: 40,
+                  size: 30,
                 ),
                 onPressed: () {
                   context.read<AuthorsCubit>().returnToSearch();
